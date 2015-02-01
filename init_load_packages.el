@@ -39,3 +39,7 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; go-mode
+(add-to-list 'load-path "~/.emacs.d/go-mode.el")
+(require 'go-mode-autoloads)
