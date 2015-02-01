@@ -1,11 +1,13 @@
-;windows only
+;; Windows only
 (if (eq system-type 'windows-nt)
     (progn
       (set-face-attribute 'default nil :font "Consolas")
-      (setq default-directory "D:/dev/")))
+      (setq default-directory "~/")))
 
-;ubuntu only
+;; Ubuntu only
 (if (eq system-type 'gnu)
     (progn
       (set-face-attribute 'default nil :family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)
-      ff-search-directories (quote ("." "~/dev/c/src"))))
+      ff-search-directories (quote ("." "~/dev/c/src"))
+      (load "server")
+      (unless (server-running-p) (server-start))))

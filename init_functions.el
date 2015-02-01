@@ -1,6 +1,6 @@
 ;;; Custom functions
 
-;http://www.emacswiki.org/emacs/IncrementNumber
+;; http://www.emacswiki.org/emacs/IncrementNumber
 (defun my-increment-number-decimal (&optional arg)
   "Increment the number forward from point by 'arg'."
   (interactive "p*")
@@ -37,4 +37,3 @@
           ((inhibit-field-text-motion t))
         (sort-subr nil 'forward-line 'end-of-line nil nil
                    (lambda (s1 s2) (eq (random 2) 0)))))))
-

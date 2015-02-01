@@ -7,3 +7,6 @@
 [submodule "ergoemacs-mode"]
 	path = ergoemacs-mode
 	url = https://github.com/ergoemacs/ergoemacs-mode.git
+[submodule "markdown-mode"]
+	path = markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
