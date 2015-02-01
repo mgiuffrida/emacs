@@ -11,3 +11,5 @@
 (global-set-key "\M-N" 'end-of-buffer)
 (global-set-key (kbd "C-c f") 'ff-find-other-file)
 (global-set-key (kbd "M-o") 'other-window)
+;; some kind of ergoemacs-dvorak bug
+(global-set-key (kbd "M-g") 'backward-word)

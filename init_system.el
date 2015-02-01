@@ -8,7 +8,7 @@
 (if (string= (getenv "THIS_ENV") "google")
     (progn
       (set-face-attribute 'default nil :family "DejaVu Sans Mono" :foundry "unknown" :slant 'normal :weight 'normal :height 98 :width 'normal)
-      ff-search-directories (quote ("." "~/dev/c/src"))
+      (setq ff-search-directories (quote ("." "~/dev/c/src")))
       (require 'google)
       (load "server")
       (unless (server-running-p) (server-start))))
