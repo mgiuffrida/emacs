@@ -18,8 +18,7 @@
   (setq web-mode-attr-indent-offset 4)
   (setq web-mode-style-padding 2)
   (setq web-mode-script-padding 2)
-  (set-face-attribute 'web-mode-html-tag-face nil :foreground "#444")
-  (set-face-attribute 'web-mode-html-attr-name-face nil :foreground "#444"))
+)
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;; google-c-style
